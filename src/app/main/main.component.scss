@@ -6,15 +6,19 @@
 .headIntoFull{
     
     display: grid;
-    border: 0.5px solid #D3D7DD;
-    grid-template-columns: auto auto auto;
+   
+    grid-template-columns: auto auto auto auto;
     
     align-content: space-evenly;
     padding: 5px;
     gap: 15px;
-    padding: 10px;
-    border: 1px solid var(--Gray-200, #E9EAEB);
+    padding: 15px;
+   
     background: #FFF;
+    border-radius: 6px;
+border: 1px solid #FAFAFA;
+background: #FFF;
+box-shadow: 0px 1px 1px 0px rgba(118, 135, 154, 0.24), 0px 3px 8px 0px rgba(118, 135, 154, 0.08);
 
 }
 .hdn {
@@ -28,12 +32,14 @@
 
 
 .hhh {
+    overflow: hidden;
     color: #101828;
-font-family: "Segoe UI";
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+    text-overflow: ellipsis;
+    font-family: "Segoe UI";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
 .hdng {
@@ -47,35 +53,43 @@ padding: 10px 0px;
 }
 
 .hng {
-    color: #1C77D6;
-font-family: "Segoe UI";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 21px; /* 131.25% */
-padding: 15px 0px;
+    color: #101828;
+    font-family: "Segoe UI";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 12px;
+    width: 20%;
 }
 
 .gr {
     padding: 12px;
 }
-
+.stss {
+    display: flex;
+    align-items: center;
+}
 .sts {
     display: flex;
 }
 .stsdt{
     display: flex;
+    justify-content: end;
     width: 80%;
+    gap: 24px;
 }
 
 .icn {
     display: flex;
-    width: 20%;
+   
 }
 
 .dt {
     display: flex;
     align-items: center;
+    
+    
 }
 .nm {
     color: var(--Gray-500, #717680);
@@ -84,8 +98,35 @@ font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: 22px; /* 157.143% */
+margin-right: 8px;
 }
 
 kendo-dropdownlist {
     width: 200px;
 }
+
+.EQ {
+    background-color: #FFF;
+    margin-top: 40px;
+    padding: 15px;
+   
+}
+.grid {
+    margin-top: 16px;
+}
+
+.ap{
+    border-radius: 16px;
+background: var(--Purple-50, #F4F3FF);
+color: var(--Purple-700, #5925DC);
+text-align: center;
+
+/* Small/Medium */
+font-family: "SF Pro Display";
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: 18px; /* 150% */
+padding: 5px;
+}
+
