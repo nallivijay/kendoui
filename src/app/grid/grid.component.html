@@ -1,0 +1,51 @@
+<kendo-grid [data]="gridData"
+[columnMenu]="{ filter: true }"
+[sortable]="true"
+[resizable]="true"
+[reorderable]="true"
+
+kendoGridSelectBy="id"
+      [(selectedKeys)]="mySelection"
+      [selectable]="{ mode: 'multiple', drag: true }"
+>
+<kendo-grid-checkbox-column  [width]="45"
+[headerClass]="{ 'text-center': true }"
+[class]="{ 'text-center': true }"
+[resizable]="false"
+[columnMenu]="false"
+[showSelectAll]="true"></kendo-grid-checkbox-column>
+    <kendo-grid-column field="Icons" title="" >
+        <ng-template kendoGridCellTemplate let-dataItem>
+            <img class="flag" src="assets\Frame 427319792.svg" [width]="20" />
+            <img class="flag" src="assets\Header Text.svg" [width]="20" />
+            <img class="flag" src="assets\copy.svg" [width]="20" />
+          </ng-template>   
+    </kendo-grid-column>
+    <kendo-grid-column field="Quote" title="Quote#"> </kendo-grid-column>
+    <kendo-grid-column field="JT" title="Job Type">
+        <ng-template  kendoGridCellTemplate let-dataItem>
+            <span title="{{dataItem.JT}}">
+              {{dataItem.JT}}
+            </span>
+          </ng-template>    
+    </kendo-grid-column>
+    <kendo-grid-column field="ST" title="Service Type">
+
+        <ng-template  kendoGridCellTemplate let-dataItem>
+            <span title="{{dataItem.ST}}">
+              {{dataItem.ST}}
+            </span>
+          </ng-template>
+    </kendo-grid-column>
+    <kendo-grid-column field="JD" title="Job Description"> </kendo-grid-column>
+    <kendo-grid-column field="Stus" title="Status">
+        <ng-template kendoGridCellTemplate let-dataItem>
+            <span 
+              *ngIf="dataItem.Stus === 'Approved'"
+              class="badge badge-success">Approved</span>
+        </ng-template>
+    </kendo-grid-column>
+            
+    <kendo-grid-column field="QO" title="Quote Owner"> </kendo-grid-column>
+    <kendo-grid-column field="CD" title="Creation Date"> </kendo-grid-column>
+  </kendo-grid>

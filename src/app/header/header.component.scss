@@ -1,0 +1,69 @@
+#header {
+    height: 50px;
+    display: flex;
+    background-color:#10162A ;
+    align-items: center;
+}
+#title p {
+    padding-left: 10px;
+    font-weight: 300;
+}
+#home{
+    display: flex;
+    align-items: center;
+    background-color: #182C61;
+    height: 50px;
+    width: 91px;
+    justify-content: center;
+}
+#home img{
+    width: 20px;
+}
+p{
+    font-weight: 400;
+    font-size:24px ;
+    color: #FFFFFF;
+    padding-left: 10px;
+    
+}
+.right {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 50%;
+    align-items: center;
+
+}
+.left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+}
+#logo img{
+    width: 100px;
+    padding-right: 30px;
+}
+#name {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+.uname {
+   color:#FFFFFF;  
+   font-weight: 200;
+}
+.profile {
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    font-size: 14px;
+    width: 26px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 8px;
+}

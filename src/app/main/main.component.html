@@ -1,0 +1,84 @@
+<div class="cnt">
+
+    <div class="estimates">
+        <div class="hdng">
+                Create Quote/Estimates
+        </div>
+        <div class="headIntoFull">
+            <div class="div1">
+                <span class="hdn">Customer:</span>
+                <span class="hhh">WE35886 - WestRock Paper and Packaging, LLC - Charleston</span>
+            </div>
+            <div class="div2">
+                <span class="hdn">Generator:</span>
+                <span class="hhh">WE35886 - WestRock Paper and Packaging, LLC - Charleston</span>
+            </div>
+            <div class="div3">
+                <span class="hdn">Branch:</span>
+                <span class="hhh">TI35 - Thompson Industrial Services, LLC</span>
+            </div>
+            <div class="div4">
+                <span class="hdn">Operating Segment :</span>
+                <span class="hhh">Industrial Services</span>
+            </div>
+            <div class="div5">
+                <span class="hdn">Line of Business :</span>
+                <span class="hhh">High Pressure Services</span>
+            </div>
+            <div class="div6">
+                <span class="hdn">Job Type:</span>
+                <span class="hhh">High Pressure Equipment Cleaning</span>
+            </div>
+            <div class="div7">
+                <span class="hdn">Currency Code:</span>
+                <span class="hhh">USD</span>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="EQ">
+        <div class="hng">
+            Existing Quotes
+        </div>
+        <div class="gr">
+            <div class="sts">
+                <div class="stsdt">
+                        <div class="dt">
+                            <div class="nm">
+                                Status
+                            </div>
+                            <kendo-dropdownlist #dropdownlist [data]="listItems" [fillMode]="'outline'"> </kendo-dropdownlist>
+                        </div>
+                        <div class="dt">
+                            <div class="nm">
+                                Date
+                            </div>
+                            <kendo-daterange >
+                                
+                                  <kendo-dateinput [fillMode]="'outline'"
+                                    kendoDateRangeStartInput
+                                    [(value)]="range.start"
+                                  ></kendo-dateinput>
+                               
+                                  <kendo-dateinput [fillMode]="'outline'"
+                                    kendoDateRangeEndInput
+                                    [(value)]="range.end"
+                                  ></kendo-dateinput>
+                                
+                              </kendo-daterange>
+                        </div>
+
+
+
+                </div>
+                <div class="icn"></div>
+            </div>
+
+            <div class="grid">
+                <app-grid></app-grid>
+            </div>
+        </div>
+    </div>
+</div>

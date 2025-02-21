@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@use "@progress/kendo-theme-material/scss/all.scss" as *;
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    //ellipsis 
+}
+
+.k-grid .k-table-td{
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    // line-height: 40px;
+
+}
+::-webkit-scrollbar {
+    display: none !important;
+}

@@ -1,0 +1,91 @@
+.cnt {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.headIntoFull{
+    
+    display: grid;
+    border: 0.5px solid #D3D7DD;
+    grid-template-columns: auto auto auto;
+    
+    align-content: space-evenly;
+    padding: 5px;
+    gap: 15px;
+    padding: 10px;
+    border: 1px solid var(--Gray-200, #E9EAEB);
+    background: #FFF;
+
+}
+.hdn {
+    color: #535862;
+    font-family: "Segoe UI";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.hhh {
+    color: #101828;
+font-family: "Segoe UI";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.hdng {
+    color: #101828;
+font-family: "Segoe UI";
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+padding: 10px 0px;
+}
+
+.hng {
+    color: #1C77D6;
+font-family: "Segoe UI";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px; /* 131.25% */
+padding: 15px 0px;
+}
+
+.gr {
+    padding: 12px;
+}
+
+.sts {
+    display: flex;
+}
+.stsdt{
+    display: flex;
+    width: 80%;
+}
+
+.icn {
+    display: flex;
+    width: 20%;
+}
+
+.dt {
+    display: flex;
+    align-items: center;
+}
+.nm {
+    color: var(--Gray-500, #717680);
+font-family: "Segoe UI";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 157.143% */
+}
+
+kendo-dropdownlist {
+    width: 200px;
+}
