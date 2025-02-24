@@ -1,5 +1,5 @@
 <div class="cnt">
-
+    
     <div class="estimates">
         <div class="hdng">
                 Create Quote/Estimates
@@ -53,13 +53,20 @@
                     <div class="nm">
                         Status
                     </div>
-                    <kendo-dropdownlist #dropdownlist [data]="listItems" [fillMode]="'outline'"> </kendo-dropdownlist>
+                    <div class="chrn">
+                        <!-- for chevron -->
+                        <kendo-svgicon [icon]="chevron" class="icon"></kendo-svgicon>  
+
+                        <kendo-dropdownlist #dropdownlist [data]="listItems" [fillMode]="'outline'" value="Approved"> </kendo-dropdownlist>
+                    </div>
+                   
                 </div>
                 <div class="dt">
                     <div class="nm">
                         Date
                     </div>
-                    <kendo-daterange >
+                    <!-- for date range -->
+                    <!-- <kendo-daterange >
                         
                           <kendo-dateinput [fillMode]="'outline'"
                             kendoDateRangeStartInput
@@ -71,13 +78,29 @@
                             [(value)]="range.end"
                           ></kendo-dateinput>
                         
+                      </kendo-daterange> -->
+                      <kendo-daterange class="dateRangeHolder k-input-outline k-input k-dateinput" >
+                        <div class="from">From:</div>
+                          <kendo-dateinput class="startTime"
+                            kendoDateRangeStartInput
+                            [(value)]="range.start"
+                          ></kendo-dateinput>
+                        <div class="dateDivider"></div>
+                        <div class="to">To:</div>
+                          <kendo-dateinput class="endTime"
+                            kendoDateRangeEndInput
+                            [(value)]="range.end"
+                          ></kendo-dateinput>
+                       
                       </kendo-daterange>
+                      <kendo-svgicon [icon]="dateic" class="icon2"></kendo-svgicon> 
                 </div>
 
 
 
         </div>
-        </div>
+    
+    </div>
         
         
         <div class="gr">

@@ -7,6 +7,7 @@ body {
     //ellipsis 
     
         background-color: #F8F9FC;
+        margin: 0px !important;
          
         
 }
@@ -21,3 +22,18 @@ body {
 ::-webkit-scrollbar {
     display: none !important;
 }
+
+
+// custom css for date
+.k-daterangepicker-popup{
+    position: absolute !important;
+    width: 410px !important;
+    left: -41px !important;
+}
+
+
+
+.k-grid .k-grid-header .k-filterable > .k-cell-inner .k-link{
+    height: 14px !important;
+}
+ 

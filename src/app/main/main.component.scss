@@ -12,7 +12,7 @@
     align-content: space-evenly;
     padding: 5px;
     gap: 15px;
-    padding: 15px;
+    padding: 12px;
    
     background: #FFF;
     border-radius: 6px;
@@ -49,7 +49,7 @@ font-size: 20px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
-padding: 10px 0px;
+padding: 16px 0px;
 }
 
 .hng {
@@ -57,27 +57,34 @@ padding: 10px 0px;
     font-family: "Segoe UI";
     font-size: 18px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: normal;
     margin-left: 12px;
     width: 20%;
+   
+    
+    
 }
 
-.gr {
-    padding: 12px;
-}
+// .gr {
+//     padding: 12px;
+// }
 .stss {
     display: flex;
     align-items: center;
+    padding: 12px 20px 0px 20px;
+    
 }
 .sts {
     display: flex;
+ 
 }
 .stsdt{
     display: flex;
     justify-content: end;
     width: 80%;
     gap: 24px;
+    
 }
 
 .icn {
@@ -92,9 +99,9 @@ padding: 10px 0px;
     
 }
 .nm {
-    color: var(--Gray-500, #717680);
+    color: #414651;
 font-family: "Segoe UI";
-font-size: 14px;
+font-size: 15px;
 font-style: normal;
 font-weight: 400;
 line-height: 22px; /* 157.143% */
@@ -107,8 +114,13 @@ kendo-dropdownlist {
 
 .EQ {
     background-color: #FFF;
-    margin-top: 40px;
-    padding: 15px;
+    margin-top: 24px;
+    // padding: 15px;
+    height: 391px;
+    border-radius: 6px;
+    border: 1px solid #FAFAFA;
+    background: #FFF;
+    box-shadow: 0px 1px 1px 0px rgba(118, 135, 154, 0.24), 0px 3px 8px 0px rgba(118, 135, 154, 0.08);
    
 }
 .grid {
@@ -125,8 +137,116 @@ text-align: center;
 font-family: "SF Pro Display";
 font-size: 12px;
 font-style: normal;
-font-weight: 500;
+font-weight: 400;
 line-height: 18px; /* 150% */
-padding: 5px;
+padding: 5px 8px ;
+
 }
 
+
+//Custom css for chevron icon
+
+::ng-deep .k-list-item.k-selected {
+    color: #3f51b5 !important;
+}
+
+.chrn {
+    position: relative;
+}
+
+::ng-deep .k-button-icon {
+ 
+    visibility: hidden !important;
+  }
+   
+   
+   
+  ::ng-deep .k-input-button{
+   
+    width: 35px !important;
+  }
+   
+  .icon {
+    width: 20px;
+    position: absolute;
+    bottom: 31%;
+    right: 4%;
+    color: #717680;
+   
+  }
+
+
+
+
+
+  
+//custom css for date
+.startTime{
+    border: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 150px;
+    margin-left: -20px;
+}
+ 
+.startTime.k-focus{
+    box-shadow: none;
+    border: 0;
+}
+ 
+.endTime{
+    margin-left: -8px;
+    border: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -15px;
+    width: 150px;
+}
+ 
+.dateRangeHolder{
+    border: 1px solid #848484;
+    border-radius: 4px;
+   
+}
+ 
+.dateRangeHolder:focus{
+    border-color: #3f51b5;
+}
+ 
+.dateDivider{
+    border:1px solid #E9EAEB;
+    border: 1px solid #E9EAEB;
+    height: 25px;
+    margin: auto;
+}
+ 
+.from{
+    margin: auto;
+    color: #535862;
+    margin-left: 12px;
+}
+ 
+.to{
+    margin: auto;
+    color: #535862;
+    margin-left: 12px;
+}
+
+.dt {
+    position: relative;
+}
+.icon2 {
+    position: absolute;
+    right: 2%;
+    color: #717680;
+}
+
+
+::ng-deep .k-input-value-text {
+    color: var(--Gray-900, #181D27) !important;
+font-family: "Segoe UI" !important;
+// font-size: 14px !important;
+font-style: normal !important;
+font-weight: 400 !important;
+line-height: normal !important;
+}

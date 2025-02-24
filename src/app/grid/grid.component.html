@@ -12,12 +12,25 @@
 [resizable]="false"
 [columnMenu]="false"
 [showSelectAll]="true"></kendo-grid-checkbox-column> -->
-    <kendo-grid-column field="Icons" title="" >
-        <ng-template kendoGridCellTemplate let-dataItem>
-            <img class="flag" src="assets\Frame 427319792.svg" [width]="20" />
-            <img class="flag" src="assets\Header Text.svg" [width]="20" />
-            <img class="flag" src="assets\copy.svg" [width]="20" />
-          </ng-template>   
+    <kendo-grid-column field="Icons" title=""  [columnMenu]="false">
+      <ng-template kendoGridCellTemplate let-dataItem>
+        <div class="actionContainer">
+          <div class="iconHolder">
+            <img class="flag rowIcon" src="assets\clone.svg" [width]="16" />
+            <p class="iconTxt">Clone</p>
+          </div>
+
+          <div class="iconHolder">
+            <img class="flag rowIcon" src="assets\re-price.svg" [width]="14" />
+            <p class="iconTxt">Re-Price</p>
+          </div>
+
+          <div class="iconHolder">
+            <img class="flag rowIcon" src="assets\view 1.svg" [width]="18" />
+            <p class="iconTxt">View</p>
+          </div>
+        </div>
+        </ng-template>   
     </kendo-grid-column>
     <kendo-grid-column field="Quote" title="Quote#"> </kendo-grid-column>
     <kendo-grid-column field="JT" title="Job Type">
