@@ -134,7 +134,7 @@ color: var(--Purple-700, #5925DC);
 text-align: center;
 
 /* Small/Medium */
-font-family: "SF Pro Display";
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 font-size: 12px;
 font-style: normal;
 font-weight: 400;
@@ -144,36 +144,7 @@ padding: 5px 8px ;
 }
 
 
-//Custom css for chevron icon
 
-::ng-deep .k-list-item.k-selected {
-    color: #3f51b5 !important;
-}
-
-.chrn {
-    position: relative;
-}
-
-::ng-deep .k-button-icon {
- 
-    visibility: hidden !important;
-  }
-   
-   
-   
-  ::ng-deep .k-input-button{
-   
-    width: 35px !important;
-  }
-   
-  .icon {
-    width: 20px;
-    position: absolute;
-    bottom: 31%;
-    right: 4%;
-    color: #717680;
-   
-  }
 
 
 
@@ -204,7 +175,7 @@ padding: 5px 8px ;
 }
  
 .dateRangeHolder{
-    border: 1px solid #848484;
+    border: 1px solid #D5D7DA;
     border-radius: 4px;
    
 }
@@ -242,11 +213,72 @@ padding: 5px 8px ;
 }
 
 
+
+
 ::ng-deep .k-input-value-text {
+    
+font-family: "Segoe UI"  !important;
+font-size: 14px  !important;
+font-style: normal  !important;
+font-weight: 400  !important;
+line-height: normal  !important;
+}
+
+::ng-deep .k-input-inner {
     color: var(--Gray-900, #181D27) !important;
+
 font-family: "Segoe UI" !important;
-// font-size: 14px !important;
+font-size: 14px !important;
 font-style: normal !important;
 font-weight: 400 !important;
 line-height: normal !important;
 }
+::ng-deep .k-column-title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 13px;
+}
+
+::ng-deep .k-table-td{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-weight: 400 !important;
+}
+
+.from {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.to {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+//Custom css for chevron icon
+
+
+
+
+::ng-deep .k-list-item.k-selected {
+    color: #3f51b5 !important;
+}
+
+.chrn {
+    position: relative;
+}
+
+::ng-deep .k-button-icon {
+ 
+    visibility: hidden !important;
+  }
+   
+  ::ng-deep .k-input-button{
+   
+    width: 35px !important;
+  }
+   
+  .icon {
+    width: 20px;
+    position: absolute;
+    bottom: 31%;
+    right: 4%;
+    color: #717680;
+   
+  }
