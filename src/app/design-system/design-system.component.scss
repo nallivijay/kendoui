@@ -1,0 +1,58 @@
+.dp-dwn {
+    position: relative;
+    width: 200px;
+}
+  .dwn-arrow {
+    width: 20px;
+    position: absolute;
+    bottom: 31%;
+    right: 4%;
+    color: #717680;
+   
+  } 
+
+  ::ng-deep .k-button-icon {
+ 
+    visibility: hidden !important;
+  }
+
+    ::ng-deep .k-list-item.k-selected {
+    color: #717680 !important;
+  }
+.txt-box {
+    width: 200px;
+}
+
+.chk-box {
+  display: flex;
+  gap: 55px;
+}
+.hdng {
+  font-weight: 600;
+  font-size: 16px;
+  margin: 10px 0px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.radio-btn{
+  display: flex;
+  gap: 55px;
+}
+
+.btn {
+  display: flex;
+  gap: 50px;
+}
+
+
+.primary-btn {
+  background:#1C77D6;
+  border-color: #1C77D6;
+  box-shadow: none !important;
+  text-transform: capitalize;
+  font-weight: 600;
+  height: 36px ;
+}
+
+.spacing {
+    padding: 20px;
+}

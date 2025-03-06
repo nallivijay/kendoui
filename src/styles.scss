@@ -1,7 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @use "@progress/kendo-theme-material/scss/all.scss" as *;
 
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     //ellipsis 
@@ -35,6 +34,7 @@ body {
 
 .k-grid .k-grid-header .k-filterable > .k-cell-inner .k-link{
     height: 14px !important;
+   
 }
 
 .k-column-title{
@@ -47,3 +47,21 @@ body {
 }
 
 
+// .icon {
+//     width: 20px;
+//     position: absolute;
+//     bottom: 31%;
+//     right: 4%;
+//     color: #717680;
+   
+//   }
+
+
+//   .chrn {
+//     position: relative;
+// }
+
+
+//  .k-list-item.k-selected {
+//     color: #858db8 !important;
+// }

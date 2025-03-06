@@ -5,13 +5,16 @@ import { KENDO_GRID } from "@progress/kendo-angular-grid";
 import { sampleProducts } from './product';
 import { Product } from './model';
 import { HeaderComponent } from "./header/header.component";
-import { FooterComponent } from "./footer/footer.component";
 import { MainComponent } from "./main/main.component";
+
+import { FooterComponent } from "./footer/footer.component";
+import { DesignSystemComponent } from "./design-system/design-system.component";
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, KENDO_GRID, HeaderComponent, FooterComponent, MainComponent],
+  imports: [CommonModule, KENDO_GRID, HeaderComponent, MainComponent, FooterComponent, DesignSystemComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

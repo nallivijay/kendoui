@@ -1,0 +1,142 @@
+<div class="spacing">
+<!-- code for dropdowns  -->
+<div class="hdng">DropDown Component</div>
+<div class="dp-dwn">
+     <kendo-svgicon [icon]="chevron" class="dwn-arrow"></kendo-svgicon>  
+     <kendo-dropdownlist #dropdownlist [data]="listItems" [fillMode]="'outline'" value="Approved"> </kendo-dropdownlist>
+</div>
+
+<!-- code for check box -->
+<div class="hdng">Checkbox Component</div>
+ <div class="chk-box">
+ 
+  <p>
+        <kendo-checkbox #checkedState [checkedState]="true"></kendo-checkbox>
+        <kendo-label
+          class="k-checkbox-label"
+          [for]="checkedState"
+          text="Checked"
+        ></kendo-label>
+  </p>
+  <p>
+        <kendo-checkbox #uncheckedState></kendo-checkbox>
+        <kendo-label
+          class="k-checkbox-label"
+          [for]="uncheckedState"
+          text="Unchecked"
+        ></kendo-label>
+  </p>
+  <p>
+        <kendo-checkbox
+          #indentState
+          checkedState="indeterminate"
+        ></kendo-checkbox>
+        <kendo-label
+          class="k-checkbox-label"
+          [for]="indentState"
+          text="Indeterminate"
+        ></kendo-label>
+  </p>
+  <p>
+        <kendo-checkbox
+          #disabledState
+          [disabled]="true"
+          [checkedState]="true"
+        ></kendo-checkbox>
+        <kendo-label
+          class="k-checkbox-label"
+          [for]="disabledState"
+          text="Disabled"
+        ></kendo-label>
+  </p>
+  
+ </div>
+
+
+<!-- Code for radio button -->
+
+<div class="hdng">RadioButton Component</div>
+        <p>Choose page layout</p>
+        <div class="radio-btn">
+          <p>
+            <kendo-radiobutton
+              #checked
+              value="Landscape"
+              
+            ></kendo-radiobutton>
+            <kendo-label
+              class="k-radio-label"
+              [for]="checked"
+              text="Landscape"
+            ></kendo-label>
+          </p>
+  
+          <p>
+            <kendo-radiobutton
+              #unchecked
+              value="Portrait"
+              
+            ></kendo-radiobutton>
+            <kendo-label
+              class="k-radio-label"
+              [for]="unchecked"
+              text="Portrait"
+            ></kendo-label>
+          </p>
+          <p>
+            <kendo-radiobutton
+              #disabled
+              value="Square"
+              
+              [disabled]="true"
+            ></kendo-radiobutton>
+            <kendo-label
+              class="k-radio-label"
+              [for]="disabled"
+              text="Square (disabled)"
+            ></kendo-label>
+          </p>
+  
+  
+        </div>
+<!-- code for button -->
+<div class="hdng">Button Component</div>
+<div class="btn">
+  
+  <button kendoButton [themeColor]="'primary'" class="primary-btn">Primary Button</button>  
+  <button kendoButton  >Secondary Button</button>
+
+  
+</div>
+
+
+
+<!-- code for text-box -->
+
+<div class="hdng">Text-box </div>
+ <div class="txt-box">
+    <kendo-textbox placeholder="John Smith" [fillMode]="'outline'"></kendo-textbox>
+ </div>
+
+<!-- code for stepper -->
+ <div class="hdng">Stepper</div>
+ <kendo-stepper
+      [steps]="steps"
+      stepType="full"
+      [(currentStep)]="current"
+      [linear]="false"
+      [style.width.px]="570"
+    >
+    </kendo-stepper>
+
+
+<!-- code for grid -->
+
+
+<kendo-grid [data]="gridData">
+  <kendo-grid-column field="ProductID" title="ID"> </kendo-grid-column>
+  <kendo-grid-column field="ProductName" title="Name"> </kendo-grid-column>
+  <kendo-grid-column field="Category.CategoryName" title="Category"> </kendo-grid-column>
+  <kendo-grid-column field="UnitPrice" title="Price"> </kendo-grid-column>
+</kendo-grid>
+</div>

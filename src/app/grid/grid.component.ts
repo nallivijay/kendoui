@@ -2,15 +2,25 @@ import { Component } from '@angular/core';
 import { Product } from './model';
 import { KENDO_GRID } from '@progress/kendo-angular-grid';
 import { NgIf } from '@angular/common';
+import { KENDO_DROPDOWNS } from '@progress/kendo-angular-dropdowns';
+import { KENDO_ICONS } from '@progress/kendo-angular-icons';
+import { chevronDownIcon } from '@progress/kendo-svg-icons';
 
 @Component({
   selector: 'app-grid',
   standalone: true,
-  imports: [KENDO_GRID,NgIf],
+  imports: [KENDO_GRID,NgIf,KENDO_ICONS,KENDO_DROPDOWNS],
   templateUrl: './grid.component.html',
   styleUrl: './grid.component.scss'
 })
 export class GridComponent {
+  
+  public chevron = chevronDownIcon;
+  public listItems: Array<string> = [
+    "Approved",
+    "Rejected"
+  ];
+
   public mySelection: string[] = [];
 public gridData: Product[] = [
     {

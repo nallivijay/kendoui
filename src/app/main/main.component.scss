@@ -116,7 +116,7 @@ kendo-dropdownlist {
     background-color: #FFF;
     margin-top: 24px;
     // padding: 15px;
-    height: 391px;
+    height: 370px;
     border-radius: 6px;
     border: 1px solid #FAFAFA;
     background: #FFF;
@@ -260,9 +260,7 @@ line-height: normal !important;
     color: #3f51b5 !important;
 }
 
-.chrn {
-    position: relative;
-}
+
 
 ::ng-deep .k-button-icon {
  
@@ -273,7 +271,15 @@ line-height: normal !important;
    
     width: 35px !important;
   }
-   
+
+
+  ::ng-deep .k-list-item.k-selected {
+    color: #717680 !important;
+  }
+
+.chrn {
+    position: relative;
+}
   .icon {
     width: 20px;
     position: absolute;
@@ -281,4 +287,10 @@ line-height: normal !important;
     right: 4%;
     color: #717680;
    
-  }
+  } 
+
+
+
+::ng-deep .k-list-item.k-selected {
+    color: green !important;
+}
