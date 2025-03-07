@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { KENDO_GRID } from "@progress/kendo-angular-grid";
 import { sampleProducts } from './product';
-import { Product } from './model';
+import { Product } from './model1';
 import { HeaderComponent } from "./header/header.component";
 import { MainComponent } from "./main/main.component";
 

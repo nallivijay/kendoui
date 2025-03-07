@@ -1,6 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-@use "@progress/kendo-theme-material/scss/all.scss" as *;
-
+@use '@progress/kendo-theme-material/scss/all.scss' as * with (
+    $kendo-colors: (
+        
+        base-hover: #fafafa,
+      )
+);
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     //ellipsis 
@@ -11,57 +15,63 @@ body {
         
 }
 
-.k-grid .k-table-td{
-    white-space: nowrap !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    // line-height: 40px;
-
-}
 ::-webkit-scrollbar {
     display: none !important;
 }
 
 
-// custom css for date
-.k-daterangepicker-popup{
-    position: absolute !important;
-    width: 410px !important;
-    left: -41px !important;
-}
+
+// .k-grid .k-table-td{
+//     white-space: nowrap !important;
+//     overflow: hidden !important;
+//     text-overflow: ellipsis !important;
+//     // line-height: 40px;
+
+// }
 
 
 
-.k-grid .k-grid-header .k-filterable > .k-cell-inner .k-link{
-    height: 14px !important;
+
+
+// // custom css for date
+// .k-daterangepicker-popup{
+//     position: absolute !important;
+//     width: 410px !important;
+//     left: -41px !important;
+// }
+
+
+
+// .k-grid .k-grid-header .k-filterable > .k-cell-inner .k-link{
+//     height: 14px !important;
    
-}
+// }
 
-.k-column-title{
-    font-weight: 400 !important;
-}
+// .k-column-title{
+//     font-weight: 400 !important;
+// }
  
 
-.k-picker-outline, .k-input-outline{
-    border-color: #D5D7DA !important;
-}
+// .k-picker-outline, .k-input-outline{
+//     border-color: #D5D7DA !important;
+// }
 
 
-// .icon {
-//     width: 20px;
-//     position: absolute;
-//     bottom: 31%;
-//     right: 4%;
-//     color: #717680;
+// // .icon {
+// //     width: 20px;
+// //     position: absolute;
+// //     bottom: 31%;
+// //     right: 4%;
+// //     color: #717680;
    
-//   }
+// //   }
 
 
-//   .chrn {
-//     position: relative;
-// }
+// //   .chrn {
+// //     position: relative;
+// // }
 
 
-//  .k-list-item.k-selected {
-//     color: #858db8 !important;
-// }
+// //  .k-list-item.k-selected {
+// //     color: #858db8 !important;
+// // }

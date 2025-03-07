@@ -1,9 +1,26 @@
 <div class="spacing">
 <!-- code for dropdowns  -->
 <div class="hdng">DropDown Component</div>
-<div class="dp-dwn">
+<div class="dp-dwn ">
      <kendo-svgicon [icon]="chevron" class="dwn-arrow"></kendo-svgicon>  
-     <kendo-dropdownlist #dropdownlist [data]="listItems" [fillMode]="'outline'" value="Approved"> </kendo-dropdownlist>
+     <!-- <kendo-dropdownlist #dropdownlist [data]="listItems" [fillMode]="'outline'" value="Approved"> </kendo-dropdownlist> -->
+     <kendo-multiselect
+     
+      #multiselect
+      [kendoMultiSelectSummaryTag]="2"
+      [data]="listItems1"
+      [(ngModel)]="value"
+      textField="text"
+      [fillMode]="'outline'"
+      valueField="value"
+      [checkboxes]="true"
+
+      class="drpdwn"
+    >
+      <ng-template kendoMultiSelectGroupTagTemplate let-dataItems class="chip-clr">
+        +{{ dataItems.length }}
+      </ng-template>
+    </kendo-multiselect>
 </div>
 
 <!-- code for check box -->
@@ -26,17 +43,7 @@
           text="Unchecked"
         ></kendo-label>
   </p>
-  <p>
-        <kendo-checkbox
-          #indentState
-          checkedState="indeterminate"
-        ></kendo-checkbox>
-        <kendo-label
-          class="k-checkbox-label"
-          [for]="indentState"
-          text="Indeterminate"
-        ></kendo-label>
-  </p>
+ 
   <p>
         <kendo-checkbox
           #disabledState
@@ -103,8 +110,8 @@
 <div class="hdng">Button Component</div>
 <div class="btn">
   
-  <button kendoButton [themeColor]="'primary'" class="primary-btn">Primary Button</button>  
-  <button kendoButton  >Secondary Button</button>
+  <button kendoButton [themeColor]="'primary'" class="primary-btn" (click)="abc()">Primary Button</button>  
+  <button kendoButton class="Secondary-btn"  >Secondary Button</button>
 
   
 </div>
@@ -131,12 +138,61 @@
 
 
 <!-- code for grid -->
+<div class="hdng">Table</div>
+<kendo-grid [data]="gridData3"
+[columnMenu]="{ filter: true }"
+[sortable]="true"
+[resizable]="true"
+[reorderable]="true"
+[selectable]="{ mode: 'single' }"
 
 
-<kendo-grid [data]="gridData">
-  <kendo-grid-column field="ProductID" title="ID"> </kendo-grid-column>
-  <kendo-grid-column field="ProductName" title="Name"> </kendo-grid-column>
-  <kendo-grid-column field="Category.CategoryName" title="Category"> </kendo-grid-column>
-  <kendo-grid-column field="UnitPrice" title="Price"> </kendo-grid-column>
-</kendo-grid>
-</div>
+>
+<kendo-grid-checkbox-column  [width]="45"
+[headerClass]="{ 'text-center': true }"
+[class]="{ 'text-center': true }"
+[resizable]="false"
+[columnMenu]="false"
+[showSelectAll]="false"></kendo-grid-checkbox-column>
+    
+    <kendo-grid-column field="contract" title="Contract"> </kendo-grid-column>
+    <kendo-grid-column field="instruction_type" title="Instruction Type">
+        <ng-template  kendoGridCellTemplate let-dataItem>
+            <span title="{{dataItem.instruction_type}}">
+              {{dataItem.instruction_type}}
+            </span>
+          </ng-template>    
+    </kendo-grid-column>
+    <kendo-grid-column field="instructions" title="Instructions">
+
+        <ng-template  kendoGridCellTemplate let-dataItem>
+            <span title="{{dataItem.instructions}}">
+              {{dataItem.instructions}}
+            </span>
+          </ng-template>
+    </kendo-grid-column>
+    <kendo-grid-column field="created_by" title="Created By"> </kendo-grid-column>
+    <kendo-grid-column field="created_date" title="Created Date">
+       
+    </kendo-grid-column>
+            
+    <kendo-grid-column field="modified_by" title="Modified By"> </kendo-grid-column>
+    <kendo-grid-column field="modified_date" title="Modified Date"> </kendo-grid-column>
+
+    <kendo-grid-column field="Icons" title=""  [columnMenu]="false">
+      <ng-template kendoGridCellTemplate let-dataItem>
+        <div class="actionContainer">
+          <div class="delete-iconHolder">
+            
+          
+          </div>
+
+          <div class="edit-iconHolder">
+            
+          </div>
+        </div>
+        </ng-template>   
+    </kendo-grid-column>
+  </kendo-grid>
+</div>     
+
