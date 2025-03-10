@@ -27,12 +27,28 @@
   display: flex;
   gap: 55px;
 }
-.hdng {
+
+.clh-checkboxHolder, .clh-radioBtnHolder{
+  display: flex;
+  gap:4px;
+}
+
+.sec-holder{
+  // border-bottom: 1px solid #717680;
+  padding: 18px 0 24px 0;
+}
+.sec-holder:last-child{
+  border: none;
+}
+.sec-heading {
   font-weight: 600;
   font-size: 16px;
   margin: 10px 0px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
+
 .radio-btn{
   display: flex;
   gap: 55px;
@@ -44,7 +60,11 @@
 }
 
 .spacing {
-  padding: 20px;
+  padding: 0 20px;
+}
+
+::ng-deep .k-radio-wrap{
+  vertical-align: bottom;
 }
 
 
@@ -123,9 +143,9 @@
   }
   .k-input-outline:focus-within {
     border-color: #1968BD !important;
-    border: none;
-    border-top: 1px solid #1968BD !important;
-    border-bottom: 1px solid #1968BD !important;
+    // border: none;
+    // border-top: 1px solid #1968BD !important;
+    // border-bottom: 1px solid #1968BD !important;
   }
   .k-list-item-text {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -151,6 +171,17 @@
     color: #A4A7AE !important;
 
 }
+
+.k-chip:nth-child(3) .k-chip-label{
+  color: #1C77D6 !important ;
+}
+
+.k-chip:nth-child(3) .k-chip-actions{
+  display: none !important;
+}
+
+
+
 }
 
 
@@ -179,12 +210,12 @@
 
 
 ::ng-deep .k-header {
-  background-color: #FAFAFA !important;
+  background-color: #EAECF5 !important;
 }
 
 ::ng-deep .k-grid .k-grid-header .k-table-th{
   vertical-align: middle !important;
-  padding: 14.6px 24px !important;
+  padding: 12px 24px !important;
   // font-weight: 600 !important;
   // color: #181D27 !important;
   // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
@@ -194,6 +225,7 @@
   font-weight: 600 !important;
   color: #181D27 !important;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  // line-height: 14px;
 }
 
 ::ng-deep .k-table, .k-data-table{
@@ -319,7 +351,7 @@ img {
     font-size: 14px;
     font-weight: 400;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-color: #D5D7DA !important;
+    border-color: #A4A7AE !important;
 
   }
 
@@ -327,5 +359,26 @@ img {
     border-color: #1968BD;
   }
 
+  .clh-txtBox{
+    border-color: #A4A7AE !important ;
+  }
   
+}
+
+
+//CSS for Stepper
+
+::ng-deep{
+  .k-step-done .k-step-indicator{
+    background-color: #039855 !important;
+    border-color:#039855 !important;
+  }
+
+  .k-focus .k-step-indicator{
+    border: none;
+  }
+
+  .k-step-text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
 }

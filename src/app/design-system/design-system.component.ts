@@ -66,12 +66,6 @@ public gridData3: Product[] = [
     created_date:"01/09/2025",
     modified_by:"McKim, Alan",
     modified_date:"01/10/2025",
-
-
-
-
-
-
   },
   {
     Id1:2,

@@ -1,198 +1,143 @@
 <div class="spacing">
 <!-- code for dropdowns  -->
-<div class="hdng">DropDown Component</div>
-<div class="dp-dwn ">
-     <kendo-svgicon [icon]="chevron" class="dwn-arrow"></kendo-svgicon>  
-     <!-- <kendo-dropdownlist #dropdownlist [data]="listItems" [fillMode]="'outline'" value="Approved"> </kendo-dropdownlist> -->
-     <kendo-multiselect
-     
-      #multiselect
-      [kendoMultiSelectSummaryTag]="2"
-      [data]="listItems1"
-      [(ngModel)]="value"
-      textField="text"
-      [fillMode]="'outline'"
-      valueField="value"
-      [checkboxes]="true"
 
-      class="drpdwn"
-    >
+<div class="sec-holder">
+  <div class="sec-heading">DropDown Component</div>
+  <div class="dp-dwn ">
+    <kendo-svgicon [icon]="chevron" class="dwn-arrow"></kendo-svgicon>
+    <!-- <kendo-dropdownlist #dropdownlist [data]="listItems" [fillMode]="'outline'" value="Approved"> </kendo-dropdownlist> -->
+    <kendo-multiselect #multiselect [kendoMultiSelectSummaryTag]="2" [data]="listItems1" [(ngModel)]="value"
+      textField="text" [fillMode]="'outline'" valueField="value" [checkboxes]="true" class="drpdwn">
       <ng-template kendoMultiSelectGroupTagTemplate let-dataItems class="chip-clr">
-        +{{ dataItems.length }}
+        +{{ dataItems.length }} more
       </ng-template>
     </kendo-multiselect>
+  </div>
+
 </div>
 
 <!-- code for check box -->
-<div class="hdng">Checkbox Component</div>
- <div class="chk-box">
- 
-  <p>
-        <kendo-checkbox #checkedState [checkedState]="true"></kendo-checkbox>
-        <kendo-label
-          class="k-checkbox-label"
-          [for]="checkedState"
-          text="Checked"
-        ></kendo-label>
-  </p>
-  <p>
-        <kendo-checkbox #uncheckedState></kendo-checkbox>
-        <kendo-label
-          class="k-checkbox-label"
-          [for]="uncheckedState"
-          text="Unchecked"
-        ></kendo-label>
-  </p>
- 
-  <p>
-        <kendo-checkbox
-          #disabledState
-          [disabled]="true"
-          [checkedState]="true"
-        ></kendo-checkbox>
-        <kendo-label
-          class="k-checkbox-label"
-          [for]="disabledState"
-          text="Disabled"
-        ></kendo-label>
-  </p>
-  
- </div>
+
+<div class="sec-holder">
+  <div class="sec-heading">Checkbox Component</div>
+  <div class="chk-box">
+    <div class="clh-checkboxHolder">
+      <kendo-checkbox #checkedState [checkedState]="true"></kendo-checkbox>
+      <kendo-label class="k-checkbox-label" [for]="checkedState" text="Checked"></kendo-label>
+    </div>
+    <div class="clh-checkboxHolder">
+      <kendo-checkbox #uncheckedState></kendo-checkbox>
+      <kendo-label class="k-checkbox-label" [for]="uncheckedState" text="Unchecked"></kendo-label>
+    </div>
+    <!-- <div class="clh-checkboxHolder">
+      <kendo-checkbox #disabledState [disabled]="true" [checkedState]="true"></kendo-checkbox>
+      <kendo-label class="k-checkbox-label" [for]="disabledState" text="Disabled"></kendo-label>
+    </div> -->
+  </div>
+</div>
+
 
 
 <!-- Code for radio button -->
 
-<div class="hdng">RadioButton Component</div>
-        <p>Choose page layout</p>
-        <div class="radio-btn">
-          <p>
-            <kendo-radiobutton
-              #checked
-              value="Landscape"
-              
-            ></kendo-radiobutton>
-            <kendo-label
-              class="k-radio-label"
-              [for]="checked"
-              text="Landscape"
-            ></kendo-label>
-          </p>
-  
-          <p>
-            <kendo-radiobutton
-              #unchecked
-              value="Portrait"
-              
-            ></kendo-radiobutton>
-            <kendo-label
-              class="k-radio-label"
-              [for]="unchecked"
-              text="Portrait"
-            ></kendo-label>
-          </p>
-          <p>
-            <kendo-radiobutton
-              #disabled
-              value="Square"
-              
-              [disabled]="true"
-            ></kendo-radiobutton>
-            <kendo-label
-              class="k-radio-label"
-              [for]="disabled"
-              text="Square (disabled)"
-            ></kendo-label>
-          </p>
-  
-  
-        </div>
-<!-- code for button -->
-<div class="hdng">Button Component</div>
-<div class="btn">
-  
-  <button kendoButton [themeColor]="'primary'" class="primary-btn" (click)="abc()">Primary Button</button>  
-  <button kendoButton class="Secondary-btn"  >Secondary Button</button>
+<div class="sec-holder">
+  <div class="sec-heading">RadioButton Component</div>
+  <div class="radio-btn">
+    <div>
+      <kendo-radiobutton #checked value="Landscape"></kendo-radiobutton>
+      <kendo-label class="k-radio-label" [for]="checked" text="Landscape"></kendo-label>
+    </div>
+    <div>
+      <kendo-radiobutton #unchecked value="Portrait"></kendo-radiobutton>
+      <kendo-label class="k-radio-label" [for]="unchecked" text="Portrait"></kendo-label>
+    </div>
+    <!-- <div>
+      <kendo-radiobutton #disabled value="Square" [disabled]="true"></kendo-radiobutton>
+      <kendo-label class="k-radio-label" [for]="disabled" text="Square (disabled)"></kendo-label>
+    </div> -->
+  </div>
+</div>
 
-  
+
+<!-- code for button -->
+
+<div class="sec-holder">
+  <div class="sec-heading">Button Component</div>
+  <div class="btn">
+    <button kendoButton [themeColor]="'primary'" class="primary-btn" (click)="abc()">Primary Button</button>
+    <button kendoButton class="Secondary-btn">Secondary Button</button>
+  </div>
+</div>
+
+
+<!-- code for text-box -->
+<div class="sec-holder">
+  <div class="sec-heading">Text-box </div>
+  <div class="txt-box">
+    <kendo-textbox class="clh-txtBox" placeholder="John Smith" [fillMode]="'outline'"></kendo-textbox>
+  </div>
 </div>
 
 
 
-<!-- code for text-box -->
-
-<div class="hdng">Text-box </div>
- <div class="txt-box">
-    <kendo-textbox placeholder="John Smith" [fillMode]="'outline'"></kendo-textbox>
- </div>
-
 <!-- code for stepper -->
- <div class="hdng">Stepper</div>
- <kendo-stepper
-      [steps]="steps"
-      stepType="full"
-      [(currentStep)]="current"
-      [linear]="false"
-      [style.width.px]="570"
-    >
-    </kendo-stepper>
+
+<!-- <div class="sec-holder">
+  <div class="sec-heading">Stepper</div>
+  <kendo-stepper [steps]="steps" stepType="full" [(currentStep)]="current" [linear]="false" [style.width.px]="570">
+  </kendo-stepper>
+</div> -->
+
 
 
 <!-- code for grid -->
-<div class="hdng">Table</div>
-<kendo-grid [data]="gridData3"
-[columnMenu]="{ filter: true }"
-[sortable]="true"
-[resizable]="true"
-[reorderable]="true"
-[selectable]="{ mode: 'single' }"
 
+<div class="sec-holder">
+  <div class="sec-heading">Table</div>
+  <kendo-grid [data]="gridData3" [columnMenu]="{ filter: true }" [sortable]="true" [resizable]="true"
+    [reorderable]="true" [selectable]="{ mode: 'single' }">
+    <kendo-grid-checkbox-column [width]="45" [headerClass]="{ 'text-center': true }" [class]="{ 'text-center': true }"
+      [resizable]="false" [columnMenu]="false" [showSelectAll]="false"></kendo-grid-checkbox-column>
 
->
-<kendo-grid-checkbox-column  [width]="45"
-[headerClass]="{ 'text-center': true }"
-[class]="{ 'text-center': true }"
-[resizable]="false"
-[columnMenu]="false"
-[showSelectAll]="false"></kendo-grid-checkbox-column>
-    
     <kendo-grid-column field="contract" title="Contract"> </kendo-grid-column>
     <kendo-grid-column field="instruction_type" title="Instruction Type">
-        <ng-template  kendoGridCellTemplate let-dataItem>
-            <span title="{{dataItem.instruction_type}}">
-              {{dataItem.instruction_type}}
-            </span>
-          </ng-template>    
+      <ng-template kendoGridCellTemplate let-dataItem>
+        <span title="{{dataItem.instruction_type}}">
+          {{dataItem.instruction_type}}
+        </span>
+      </ng-template>
     </kendo-grid-column>
     <kendo-grid-column field="instructions" title="Instructions">
 
-        <ng-template  kendoGridCellTemplate let-dataItem>
-            <span title="{{dataItem.instructions}}">
-              {{dataItem.instructions}}
-            </span>
-          </ng-template>
+      <ng-template kendoGridCellTemplate let-dataItem>
+        <span title="{{dataItem.instructions}}">
+          {{dataItem.instructions}}
+        </span>
+      </ng-template>
     </kendo-grid-column>
     <kendo-grid-column field="created_by" title="Created By"> </kendo-grid-column>
     <kendo-grid-column field="created_date" title="Created Date">
-       
     </kendo-grid-column>
-            
+
     <kendo-grid-column field="modified_by" title="Modified By"> </kendo-grid-column>
     <kendo-grid-column field="modified_date" title="Modified Date"> </kendo-grid-column>
 
-    <kendo-grid-column field="Icons" title=""  [columnMenu]="false">
+    <kendo-grid-column field="Icons" title="" [columnMenu]="false">
       <ng-template kendoGridCellTemplate let-dataItem>
         <div class="actionContainer">
           <div class="delete-iconHolder">
-            
-          
+
+
           </div>
 
           <div class="edit-iconHolder">
-            
+
           </div>
         </div>
-        </ng-template>   
+      </ng-template>
     </kendo-grid-column>
   </kendo-grid>
-</div>     
+</div>
+</div>
+  
 
