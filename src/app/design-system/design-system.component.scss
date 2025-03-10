@@ -1,15 +1,16 @@
 .dp-dwn {
-    position: relative;
-    width: 350px;
+  position: relative;
+  width: 350px;
+  background-color: #ffffff;
 }
-  .dwn-arrow {
-    width: 20px;
-    position: absolute;
-    bottom: 30%;
-    right: 2%;
-    color: #717680;
-   
-  } 
+.dwn-arrow {
+  width: 20px;
+  position: absolute;
+  bottom: 30%;
+  right: 2%;
+  color: #717680;
+ 
+} 
 
   ::ng-deep .k-button-icon {
  
@@ -90,13 +91,13 @@
     background-color: #1968BD  !important;
   }
   .k-button-solid-base:focus{
-    background-color: #FAFAFA !important;
+    background-color: #F5f5f5 !important;
   }
   .k-button-solid-base:active{
-    background-color: #FAFAFA !important;
+    background-color: #F5f5f5 !important;
   }
   .k-button-solid-base:hover{
-    background-color: #FAFAFA !important;
+    background-color: #F5f5f5 !important;
   }
 
 }
@@ -106,9 +107,9 @@
   text-transform: capitalize;
   font-weight: 600;
   height: 36px ;
-  border-color:#D5D7DA ;
-  color: #414651;
   
+  color: #414651;
+  border-color: #A4A7AE !important;
 }
 
 // code for button end
@@ -126,15 +127,13 @@
   .k-clear-value{
     display: none !important;
   }
-  .k-list-item:hover {
-    background-color: #fafafa !important;
-  }
-  .k-list-item:focus {
-    background-color: none !important;
-  }
   
-  .k-list-item:active {
-    background-color: #fafafa !important;
+  
+  .k-list-item:focus, .k-list-optionlabel:focus, .k-list-item.k-focus, .k-focus.k-list-optionlabel  {
+    background-color: #ffffff;
+  }
+  .k-list-item:hover {
+    background-color: #f5f5f5 !important;
   }
   .k-checkbox:checked {
     background-color:#F1F7FD !important ;
@@ -164,6 +163,7 @@
     font-size: 12px;
     font-weight: 400;
     color: #414651;
+    
   }
   .k-svg-i-x-circle {
  
@@ -172,12 +172,16 @@
 
 }
 
+
 .k-chip:nth-child(3) .k-chip-label{
   color: #1C77D6 !important ;
 }
 
 .k-chip:nth-child(3) .k-chip-actions{
   display: none !important;
+}
+.k-chip {
+  background-color: #ffffff !important;
 }
 
 
@@ -186,7 +190,12 @@
 
 
 .drpdwn {
-  border-color: #D5D7DA;
+  border-color: #A4A7AE !important;
+  // background-color: #ffffff;
+}
+
+.drpdwn:focus-within {
+  border-color: #1968BD !important;
 }
 
 
@@ -215,7 +224,7 @@
 
 ::ng-deep .k-grid .k-grid-header .k-table-th{
   vertical-align: middle !important;
-  padding: 12px 24px !important;
+  padding: 12px  !important;
   // font-weight: 600 !important;
   // color: #181D27 !important;
   // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
@@ -240,7 +249,8 @@
     overflow: hidden !important;
     text-overflow: ellipsis !important;
     height: 48px;
-    padding: 0 24px;
+    padding: 0 12px;
+    border-color: #E9EAEB rgba(0, 0, 0, 0);
 }
 
 ::ng-deep .k-grid-header .k-grid-header-menu{
@@ -361,8 +371,12 @@ img {
 
   .clh-txtBox{
     border-color: #A4A7AE !important ;
+    background-color: #ffffff !important;
+    
   }
-  
+  .k-input-md .k-input-inner {
+    padding: 8px !important;
+  }
 }
 
 
