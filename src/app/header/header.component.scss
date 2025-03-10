@@ -8,16 +8,29 @@
     padding-left: 10px;
     font-weight: 300;
 }
-#home{
+#isp-home{
     display: flex;
     align-items: center;
     background-color: #1C77D6;
     height: 50px;
     width: 91px;
     justify-content: center;
+    cursor: pointer;
 }
-#home img{
+#isp-home img{
     width: 20px;
+}
+
+.home-circle {
+    height: 38px;
+    width: 38px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    color: #181D27;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 38px;
 }
 p{
     font-weight: 400;
