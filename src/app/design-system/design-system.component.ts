@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { KENDO_DROPDOWNS } from '@progress/kendo-angular-dropdowns';
 import { KENDO_ICONS } from '@progress/kendo-angular-icons';
-import { bookIcon, chevronDownIcon, eyeIcon, fileAddIcon, paperclipIcon, userIcon } from '@progress/kendo-svg-icons';
+import { bookIcon, checkIcon, chevronDownIcon, eyeIcon, fileAddIcon, paperclipIcon, SVGIcon, userIcon } from '@progress/kendo-svg-icons';
 import { KENDO_INPUTS } from '@progress/kendo-angular-inputs';
 import { KENDO_LABEL } from '@progress/kendo-angular-label';
 import { KENDO_BUTTONS } from '@progress/kendo-angular-buttons';
@@ -19,6 +19,7 @@ import { Product } from './model';
   styleUrl: './design-system.component.scss'
 })
 export class DesignSystemComponent {
+  public checkIcon = checkIcon;
   public chevron = chevronDownIcon;
   public listItems: Array<string> = [
     "Approved",
@@ -33,11 +34,11 @@ export class DesignSystemComponent {
   };
   public current = 1;
   public steps = [
-    { label: "Personal Info", svgIcon: userIcon },
-    { label: "Education", svgIcon: bookIcon },
-    { label: "Attachments", svgIcon: paperclipIcon, optional: true },
-    { label: "Preview", svgIcon: eyeIcon },
-    { label: "Submit", svgIcon: fileAddIcon },
+    { label: "Step Title", isValid: true},
+    { label: "Step Title", isValid: true},
+    { label: "Step Title", isValid: true},
+    { label: "Step Title" , isValid: true},
+    { label: "Step Title", isValid: true},
   ];
 
 

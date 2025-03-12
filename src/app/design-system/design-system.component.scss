@@ -386,8 +386,13 @@ img {
   .k-step-done .k-step-indicator{
     background-color: #039855 !important;
     border-color:#039855 !important;
+    z-index: 10 !important;
   }
-
+  .k-stepper .k-step-indicator {
+    background-color: #ffffff;
+    border-color: #717680;
+    color: #717680;
+  }
   .k-focus .k-step-indicator{
     border: none;
   }
@@ -395,4 +400,28 @@ img {
   .k-step-text{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
+  .k-stepper .k-step-indicator::after {
+    border-color: transparent !important;
+    // background-color: transparent !important;
+    
+  }
+  .k-stepper .k-step-label .k-step-text  {
+    color: #181D27;
+  }
+ 
+  .k-step-list-horizontal ~ .k-progressbar {
+    background-color: #D5D7DA !important;
+  }
+
+  .k-progressbar .k-selected{
+    background-color: #039855 !important;
 }
+
+  
+  
+
+
+}
+
+
+
