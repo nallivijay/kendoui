@@ -473,3 +473,141 @@ img {
   width: 200px;
   background-color:  #ffffff;
 }
+
+
+
+// code for date 
+
+
+// code for date
+.startTime{
+  border: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 150px;
+  margin-left: -20px;
+}
+
+.startTime.k-focus{
+  box-shadow: none;
+  border: 0;
+}
+
+.endTime{
+  margin-left: -8px;
+  border: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: -15px;
+  width: 150px;
+}
+::ng-deep .k-input-md .k-input-inner  {
+  background-color: transparent !important;
+}
+.dateRangeHolder{
+  border: 1px solid #D5D7DA;
+  border-radius: 4px;
+ 
+}
+
+.dateRangeHolder:focus{
+  border-color: #3f51b5;
+}
+
+.dateDivider{
+  border:1px solid #E9EAEB;
+  border: 1px solid #E9EAEB;
+  height: 25px;
+  margin: auto;
+}
+
+.from{
+  margin: auto;
+  color: #535862;
+  margin-left: 8px;
+}
+
+.to{
+  margin: auto;
+  color: #535862;
+  margin-left: 12px;
+}
+
+.dt {
+  position: relative;
+}
+.icon2 {
+  position: absolute;
+  right: 3%;
+  color: #717680;
+  top:60%;
+ 
+  
+}
+
+.dateDivider {
+  margin-left: 0px;
+  margin-right: 0px
+}
+.startTime {
+  width: 100px;
+}
+.endTime {
+  width: 100px;
+  background-color: transparent;
+}
+
+::ng-deep .k-input-value-text {
+  
+font-family: "Segoe UI"  !important;
+font-size: 14px  !important;
+font-style: normal  !important;
+font-weight: 400  !important;
+line-height: normal  !important;
+}
+.nm {
+  margin-bottom: 5px;
+}
+::ng-deep .k-input-inner {
+  color: var(--Gray-900, #181D27) !important;
+
+font-family: "Segoe UI" !important;
+font-size: 14px !important;
+font-style: normal !important;
+font-weight: 400 !important;
+line-height: normal !important;
+}
+::ng-deep .k-column-title{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-weight: 600 !important;
+  font-size: 13px;
+}
+
+::ng-deep .k-table-td{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+  font-weight: 400 !important;
+}
+
+.from {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-right: 8px;
+}
+
+.to {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-right: 8px;
+
+}
+
+
+.dt {
+  width:300px;
+}
+
+::ng-deep .k-animation-container-shown {
+  background-color:#ffffff !important;
+}
+
+.bgrnd {
+  background-color: #ffffff;
+}

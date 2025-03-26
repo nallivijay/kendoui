@@ -95,7 +95,32 @@
       </div>
      
     </div>
-  
+   <!-- code for calendar -->
+   <div class="dt">
+    <div class="nm">
+        Date
+    </div>
+    <!-- for date range -->  
+     <div class="bgrnd">                         
+      <kendo-daterange class="dateRangeHolder k-input-outline k-input k-dateinput" >
+        <div class="from">From:</div>
+          <kendo-dateinput class="startTime"
+            kendoDateRangeStartInput
+            [(value)]="range.start"
+          ></kendo-dateinput>
+        <div class="dateDivider"></div>
+        <div class="to">To:</div>
+          <kendo-dateinput class="endTime"
+            kendoDateRangeEndInput
+            [(value)]="range.end"
+          ></kendo-dateinput>
+       
+      </kendo-daterange>
+      <kendo-svgicon [icon]="dateic" class="icon2"></kendo-svgicon> 
+    </div>
+    
+</div>
+
   <!-- code for stepper -->
   
   <div class="sec-holder">
