@@ -41,6 +41,15 @@ export class DesignSystemComponent {
     { label: "Step Title", isValid: true},
   ];
 
+  public currentVertical = 0;
+  public stepsVertical = [
+    { label: "Step Title", isValid: true},
+    { label: "Step Title", isValid: true},
+    { label: "Step Title", isValid: true},
+    { label: "Step Title" , isValid: true},
+    { label: "Step Title", isValid: true},
+  ];
+
 
 
 

@@ -17,7 +17,8 @@
   </div>
   
   <!-- code for check box -->
-  
+  <div></div>
+  <div></div>
   <div class="sec-holder">
     <div class="sec-heading">Checkbox Component</div>
     <div class="chk-box">
@@ -43,11 +44,11 @@
   <div class="sec-holder">
     <div class="sec-heading">RadioButton Component</div>
     <div class="radio-btn">
-      <div>
+      <div class="radio-btn-holder">
         <kendo-radiobutton #checked value="Landscape"></kendo-radiobutton>
         <kendo-label class="k-radio-label" [for]="checked" text="Landscape"></kendo-label>
       </div>
-      <div>
+      <div class="radio-btn-holder">
         <kendo-radiobutton #unchecked value="Portrait"></kendo-radiobutton>
         <kendo-label class="k-radio-label" [for]="unchecked" text="Portrait"></kendo-label>
       </div>
@@ -83,8 +84,15 @@
   <!-- code for stepper -->
   
   <div class="sec-holder">
-    <div class="sec-heading">Stepper</div>
+    <div class="sec-heading">Stepper Horizontal</div>
     <kendo-stepper [steps]="steps" stepType="full" [(currentStep)]="current" [linear]="false" [successSVGIcon]="checkIcon" [style.width.px]="570">
+    </kendo-stepper>
+  </div>
+
+
+  <div class="sec-holder">
+    <div class="sec-heading">Stepper Vertical</div>
+    <kendo-stepper orientation="vertical" [steps]="stepsVertical" stepType="full" [(currentStep)]="currentVertical" [linear]="false" [successSVGIcon]="checkIcon" [style.width.px]="570">
     </kendo-stepper>
   </div>
   
