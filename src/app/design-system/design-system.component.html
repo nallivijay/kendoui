@@ -79,7 +79,22 @@
     </div>
   </div>
   
-  
+    <!-- code for autocomplete -->
+    <div class="sec-holder">
+      <div class="sec-heading">Auto Complete</div>
+      <div class="autocmplt">
+        <kendo-autocomplete
+          
+        [data]="listItems2"
+        kendoDropDownFilter
+        placeholder="Search"
+        
+        [fillMode]="'outline'"
+      >
+      </kendo-autocomplete>
+      </div>
+     
+    </div>
   
   <!-- code for stepper -->
   
@@ -148,5 +163,8 @@
   </div>
   </div>
     
+
+
+
   
   

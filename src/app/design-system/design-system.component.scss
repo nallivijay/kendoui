@@ -135,10 +135,10 @@
 ::ng-deep {
 
 
-  .k-svg-i-x {
+  .drpdwn .k-svg-i-x {
     display: none !important;
   }
-  .k-clear-value{
+  .drpdwn .k-clear-value{
     display: none !important;
   }
   
@@ -389,7 +389,7 @@ img {
   }
 
   .k-input-outline:hover {
-    border-color: #1968BD;
+    border-color: #1968BD !important;
   }
 
   .clh-txtBox{
@@ -452,3 +452,24 @@ img {
 
 
 
+// code for autocomplete
+
+
+::ng-deep {
+  .k-input-md .k-input-inner {
+    background-color: #ffffff;
+  }
+  .k-no-data, .k-nodata {
+    background-color: #ffffff;
+    box-shadow: none;
+  }
+  .k-svg-i-x .k-svg-icon .k-icon {
+    color: #717680;
+  }
+  
+}
+
+.autocmplt {
+  width: 200px;
+  background-color:  #ffffff;
+}

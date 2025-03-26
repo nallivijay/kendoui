@@ -25,6 +25,13 @@ export class DesignSystemComponent {
     "Approved",
     "Rejected"
   ];
+  public listItems2: Array<string> = [
+    "Albania",
+    "Andorra",
+    "Armenia",
+    "Austria",
+    "Azerbaijan",
+  ];
   public radio1 = {
     layout: "Landscape",
   };
