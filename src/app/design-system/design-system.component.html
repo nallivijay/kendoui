@@ -106,7 +106,7 @@
     </div>
     <!-- for date range -->  
      <div class="bgrnd">                         
-      <kendo-daterange class="dateRangeHolder k-input-outline k-input k-dateinput" cal>
+      <kendo-daterange class="dateRangeHolder k-input-outline k-input k-dateinput" >
         <div class="from">From:</div>
           <kendo-dateinput class="startTime"
             kendoDateRangeStartInput
@@ -118,6 +118,7 @@
           <kendo-dateinput class="endTime"
             kendoDateRangeEndInput
             [(value)]="range.end"
+            [placeholder]="range.end ? 'MM/dd/yyyy' : ''"
             format="MM/dd/yyyy"
           ></kendo-dateinput>
        
