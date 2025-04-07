@@ -11,12 +11,13 @@ import { KENDO_DATEINPUTS } from '@progress/kendo-angular-dateinputs';
 
 import { FormsModule } from '@angular/forms';
 import { Product } from './model';
+import { DropDwnComponent } from "../drop-dwn/drop-dwn.component";
 
 
 @Component({
   selector: 'app-design-system',
   standalone: true,
-  imports: [KENDO_DROPDOWNS,KENDO_ICONS,KENDO_INPUTS,KENDO_LABEL,KENDO_BUTTONS,KENDO_LAYOUT,KENDO_GRID,FormsModule,KENDO_DATEINPUTS],
+  imports: [KENDO_DROPDOWNS, KENDO_ICONS, KENDO_INPUTS, KENDO_LABEL, KENDO_BUTTONS, KENDO_LAYOUT, KENDO_GRID, FormsModule, KENDO_DATEINPUTS, DropDwnComponent],
   templateUrl: './design-system.component.html',
   styleUrl: './design-system.component.scss'
 })

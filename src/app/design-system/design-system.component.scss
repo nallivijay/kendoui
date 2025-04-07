@@ -20,10 +20,10 @@
   background-color: #FFFFFF;
 }
 
-  ::ng-deep .k-button-icon {
+  // ::ng-deep .k-button-icon {
  
-    visibility: hidden !important;
-  }
+  //   visibility: hidden !important;
+  // }
 
     ::ng-deep .k-list-item.k-selected {
     color: #717680 !important;
@@ -132,6 +132,13 @@
 
 
 // code for dropdown
+
+
+
+::ng-deep .k-input-inner::placeholder {
+  color: #717680 !important;
+  
+}
 ::ng-deep {
 
 
@@ -205,6 +212,8 @@
 
 
 }
+
+
 
 
 .drpdwn {
@@ -444,10 +453,6 @@ img {
   line-height: 20px;
 }
 
-  
-  
-
-
 }
 
 
@@ -476,6 +481,12 @@ img {
 
 
 
+
+
+
+
+
+
 // code for date 
 
 
@@ -484,7 +495,7 @@ img {
   border: 0;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  width: 150px;
+  width: 90px;
   margin-left: -20px;
 }
 
@@ -505,7 +516,7 @@ img {
   background-color: transparent !important;
 }
 .dateRangeHolder{
-  border: 1px solid #D5D7DA;
+  border: 1px solid #9e9e9e;
   border-radius: 4px;
  
 }
@@ -531,6 +542,9 @@ img {
   margin: auto;
   color: #535862;
   margin-left: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-right: 4px;
+  
 }
 
 .dt {
@@ -549,11 +563,11 @@ img {
   margin-left: 0px;
   margin-right: 0px
 }
-.startTime {
-  width: 100px;
-}
+// .startTime {
+//   width: 100px;
+// }
 .endTime {
-  width: 100px;
+  width: 115px;
   background-color: transparent;
 }
 
@@ -593,11 +607,6 @@ line-height: normal !important;
   margin-right: 8px;
 }
 
-.to {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-right: 8px;
-
-}
 
 
 .dt {
@@ -608,6 +617,24 @@ line-height: normal !important;
   background-color:#ffffff !important;
 }
 
+
+
+.wdth {
+  width: 300px;
+  background-color: #ffffff;
+
+
+}
 .bgrnd {
   background-color: #ffffff;
+}
+// code for date picker
+kendo-datepicker {
+  width: 300px;
+  border-color: #9e9e9e;
+}
+
+::ng-deep .k-button-md.k-icon-button .k-button-icon {
+  color: #717680;
+  box-shadow: none
 }

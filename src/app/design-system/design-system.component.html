@@ -95,10 +95,14 @@
       </div>
      
     </div>
+
+
+
+    
    <!-- code for calendar -->
    <div class="dt">
-    <div class="nm">
-        Date
+    <div class="nm sec-heading">
+        Date Range  
     </div>
     <!-- for date range -->  
      <div class="bgrnd">                         
@@ -107,18 +111,32 @@
           <kendo-dateinput class="startTime"
             kendoDateRangeStartInput
             [(value)]="range.start"
+            format="MM/dd/yyyy"
           ></kendo-dateinput>
         <div class="dateDivider"></div>
         <div class="to">To:</div>
           <kendo-dateinput class="endTime"
             kendoDateRangeEndInput
             [(value)]="range.end"
+            format="MM/dd/yyyy"
           ></kendo-dateinput>
        
       </kendo-daterange>
       <kendo-svgicon [icon]="dateic" class="icon2"></kendo-svgicon> 
     </div>
     
+</div>
+<!-- code for date input -->
+
+<div class="sec-holder ">
+  <div class="sec-heading">Date Picker</div>
+  <div class=" wdth">
+
+  
+<kendo-datepicker [fillMode]="'outline'"
+placeholder="Choose a date ..."
+></kendo-datepicker>
+</div>
 </div>
 
   <!-- code for stepper -->
@@ -188,7 +206,7 @@
   </div>
   </div>
     
-
+<app-drop-dwn></app-drop-dwn>
 
 
   
