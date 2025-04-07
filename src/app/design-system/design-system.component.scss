@@ -526,9 +526,9 @@ img {
 }
 
 .dateDivider{
-  border:1px solid #E9EAEB;
-  border: 1px solid #E9EAEB;
-  height: 25px;
+  border:0.5px solid #E9EAEB;
+  border: 0.5px solid #E9EAEB;
+  height: 20px;
   margin: auto;
 }
 
@@ -536,14 +536,17 @@ img {
   margin: auto;
   color: #535862;
   margin-left: 8px;
+  margin-bottom: 8px;
 }
 
 .to{
   margin: auto;
   color: #535862;
-  margin-left: 12px;
+  margin-left: 8px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-right: 4px;
+  margin-bottom: 8px;
+
   
 }
 
@@ -554,7 +557,7 @@ img {
   position: absolute;
   right: 3%;
   color: #717680;
-  top:60%;
+  top:58%;
  
   
 }
@@ -637,4 +640,35 @@ kendo-datepicker {
 ::ng-deep .k-button-md.k-icon-button .k-button-icon {
   color: #717680;
   box-shadow: none
+}
+
+::ng-deep .k-calendar .k-calendar-td:focus .k-calendar-cell-inner, .k-calendar .k-calendar-td:focus .k-link, .k-calendar .k-calendar-td.k-focus .k-calendar-cell-inner, .k-calendar .k-calendar-td.k-focus .k-link {
+  background-color: #54d61c !important;
+}
+
+
+// code for tooltip
+
+::ng-deep .k-tooltip{
+  background-color: #ffffff !important;
+  color: #535862 !important;
+  display: block !important;
+  box-shadow: 0px 12px 16px -4px rgba(10, 13, 18, 0.08), 0px 4px 6px -2px rgba(10, 13, 18, 0.03) !important;
+  
+}
+::ng-deep .k-tooltip-content {
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  font-family: 'Segoe UI' !important;
+  
+}
+::ng-deep .k-callout {
+ color: #ffffff !important;
+}
+
+
+::ng-deep .k-animation-container {
+  box-shadow: none !important;
+  border-radius: 8px !important;
+
 }

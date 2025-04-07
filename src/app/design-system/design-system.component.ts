@@ -8,7 +8,7 @@ import { KENDO_BUTTONS } from '@progress/kendo-angular-buttons';
 import { KENDO_LAYOUT } from '@progress/kendo-angular-layout';
 import { KENDO_GRID } from '@progress/kendo-angular-grid';
 import { KENDO_DATEINPUTS } from '@progress/kendo-angular-dateinputs';
-
+import { KENDO_TOOLTIPS } from '@progress/kendo-angular-tooltip';
 import { FormsModule } from '@angular/forms';
 import { Product } from './model';
 import { DropDwnComponent } from "../drop-dwn/drop-dwn.component";
@@ -17,7 +17,7 @@ import { DropDwnComponent } from "../drop-dwn/drop-dwn.component";
 @Component({
   selector: 'app-design-system',
   standalone: true,
-  imports: [KENDO_DROPDOWNS, KENDO_ICONS, KENDO_INPUTS, KENDO_LABEL, KENDO_BUTTONS, KENDO_LAYOUT, KENDO_GRID, FormsModule, KENDO_DATEINPUTS, DropDwnComponent],
+  imports: [KENDO_DROPDOWNS, KENDO_ICONS, KENDO_INPUTS,KENDO_TOOLTIPS, KENDO_LABEL, KENDO_BUTTONS, KENDO_LAYOUT, KENDO_GRID, FormsModule, KENDO_DATEINPUTS, DropDwnComponent],
   templateUrl: './design-system.component.html',
   styleUrl: './design-system.component.scss'
 })
@@ -63,8 +63,8 @@ export class DesignSystemComponent {
 
   
   public range = {
-    start: new Date(2025, 6, 3),
-    end: new Date(2025, 6, 9),
+    start: new Date(),
+    end: new Date(),
   };
 
 

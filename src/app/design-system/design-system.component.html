@@ -106,7 +106,7 @@
     </div>
     <!-- for date range -->  
      <div class="bgrnd">                         
-      <kendo-daterange class="dateRangeHolder k-input-outline k-input k-dateinput" >
+      <kendo-daterange class="dateRangeHolder k-input-outline k-input k-dateinput" cal>
         <div class="from">From:</div>
           <kendo-dateinput class="startTime"
             kendoDateRangeStartInput
@@ -135,6 +135,7 @@
   
 <kendo-datepicker [fillMode]="'outline'"
 placeholder="Choose a date ..."
+calendarType="classic"
 ></kendo-datepicker>
 </div>
 </div>
@@ -153,9 +154,24 @@ placeholder="Choose a date ..."
     <kendo-stepper orientation="vertical" [steps]="stepsVertical" stepType="full" [(currentStep)]="currentVertical" [linear]="false" [successSVGIcon]="checkIcon" [style.width.px]="570">
     </kendo-stepper>
   </div>
-  
-  
-  
+
+
+
+  <!-- code for tooltip -->
+  <div class="sec-holder">
+    <div class="sec-heading">Tool Tip</div>
+  <div kendoTooltip style="text-align: left; padding-top: 10px;">
+    <button
+      kendoButton
+      themeColor="primary"
+      title="Saves the current document"
+    >
+      Save
+    </button>
+
+    
+  </div>
+  </div>
   <!-- code for grid -->
   
   <div class="sec-holder">
