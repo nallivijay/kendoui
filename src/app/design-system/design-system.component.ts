@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { KENDO_DROPDOWNS } from '@progress/kendo-angular-dropdowns';
+import { KENDO_DROPDOWNS} from '@progress/kendo-angular-dropdowns';
 import { KENDO_ICONS } from '@progress/kendo-angular-icons';
 import { bookIcon, calendarIcon, checkIcon, chevronDownIcon, eyeIcon, fileAddIcon, paperclipIcon, SVGIcon, userIcon } from '@progress/kendo-svg-icons';
 import { KENDO_INPUTS } from '@progress/kendo-angular-inputs';
@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { Product } from './model';
 import { DropDwnComponent } from "../drop-dwn/drop-dwn.component";
 
+import { ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-design-system',
@@ -22,6 +23,8 @@ import { DropDwnComponent } from "../drop-dwn/drop-dwn.component";
   styleUrl: './design-system.component.scss'
 })
 export class DesignSystemComponent {
+
+
   public checkIcon = checkIcon;
   public chevron = chevronDownIcon;
   public dateic = calendarIcon;

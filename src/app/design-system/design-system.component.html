@@ -7,7 +7,7 @@
       <kendo-svgicon [icon]="chevron" class="dwn-arrow"></kendo-svgicon>
       <!-- <kendo-dropdownlist #dropdownlist [data]="listItems" [fillMode]="'outline'" value="Approved"> </kendo-dropdownlist> -->
       <kendo-multiselect #multiselect [kendoMultiSelectSummaryTag]="2" [data]="listItems1" [(ngModel)]="value"
-        textField="text" [fillMode]="'outline'" valueField="value" [checkboxes]="true" class="drpdwn">
+        textField="text" [fillMode]="'outline'" valueField="value" [checkboxes]="true" class="drpdwn" [autoClose]="false">
         <ng-template kendoMultiSelectGroupTagTemplate let-dataItems class="chip-clr">
           +{{ dataItems.length }} more
         </ng-template>
