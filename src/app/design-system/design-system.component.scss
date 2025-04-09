@@ -678,9 +678,14 @@ kendo-datepicker {
 
 }
 
-::ng-deep .k-calendar .k-focus .k-link {
-  background-color: #F1F7FD !important;
-  color: #1c77d6 !important;
+// ::ng-deep .k-calendar .k-focus .k-link {
+//   background-color: #F1F7FD !important;
+//   color: #1c77d6 !important;
+// }
+
+::ng-deep .k-datepicker-popup .k-calendar .k-focus .k-link {
+   background-color: #1c77d6 !important;
+  color: #FFFFFF !important;
 }
 
 
