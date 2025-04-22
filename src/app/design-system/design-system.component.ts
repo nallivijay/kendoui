@@ -44,11 +44,11 @@ export class DesignSystemComponent {
 
   public buttonCount = 5;
   public info = true;
-  public pageSizes = [2, 5, 10, 20];
+  public pageSizes = [5, 10, 20];
   public previousNext = true;
   public position: PagerPosition = "bottom";
   public data: any[] = products;
-  public pageSize = 6;
+  public pageSize = 2;
   public skip = 0;
   public checkIcon = checkIcon;
   public chevron = chevronDownIcon;
