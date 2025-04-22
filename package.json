@@ -36,6 +36,7 @@
     "@progress/kendo-angular-label": "17.0.1",
     "@progress/kendo-angular-layout": "17.0.1",
     "@progress/kendo-angular-navigation": "17.0.1",
+    "@progress/kendo-angular-notification": "^17.0.1",
     "@progress/kendo-angular-pager": "17.0.1",
     "@progress/kendo-angular-pdf-export": "17.0.1",
     "@progress/kendo-angular-popup": "17.0.1",

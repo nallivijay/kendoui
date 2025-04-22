@@ -1,0 +1,111 @@
+::ng-deep {
+    .k-notification-success  {
+        border-radius: 4px !important;
+        border: 1px solid var(--Success-200, #A6F4C5) !important;
+        background: var(--Success-50, #ECFDF3) !important;
+        box-shadow: none !important;
+        padding: 8px;
+        height: 40px !important;
+        width: 474px !important;
+    }
+       .k-notification-success   .k-notification-content {
+        color: var(--Success-700, #027A48) !important;
+        font-family: "Segoe UI" !important;
+        font-size: 16px !important;
+        font-style: normal !important;
+        font-weight: 400 !important;
+        line-height: normal !important;
+        margin-bottom: 2px;
+
+    }
+    .k-notification-success .k-svg-i-x {
+        color: var(--Success-700, #027A48) !important;
+    }
+    .k-svg-i-check-outline {
+        color: var(--Success-700, #027A48) !important
+    }
+
+    .k-notification-warning {
+        border-radius: 4px;
+        border: 1px solid var(--Warning-200, #FEDF89);
+        background: var(--Warning-50, #FFFAEB);
+        box-shadow: none !important;
+        padding: 8px;
+        height: 40px !important;
+        width: 474px !important;
+    }
+    .k-notification-warning .k-notification-content  {
+        color: var(--Warning-700, #B54708);
+        font-family: "Segoe UI";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 2px;
+
+    }
+    .k-notification-warning   .k-svg-i-x  {
+        color: #B54708;
+}
+     .k-svg-i-exclamation-circle {
+        color: #B54708;
+
+     }
+
+
+
+     .k-notification-error {
+        border-radius: 4px;
+        border: 1px solid var(--Error-200, #FECDCA);
+        background: var(--Error-50, #FEF3F2);
+        box-shadow: none !important;
+        padding: 8px;
+        height: 40px !important;
+        width: 474px !important;
+     }
+     .k-notification-error .k-notification-content{
+        color: var(--Error-700, #B42318);
+        font-family: "Segoe UI";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        margin-bottom: 2px;
+
+        line-height: normal;
+     }
+     .k-notification-error .k-svg-i-x  {
+        color: #B42318;
+}      
+    .k-svg-i-x-outline {
+        color: #B42318;
+
+}       
+
+    .k-notification-info {
+        border-radius: 4px;
+        border: 1px solid var(--Brand-200, #C9E0F8);
+        background: var(--Brand-50, #F1F7FD);
+        box-shadow: none !important;
+        padding: 8px;
+        height: 40px !important;
+        width: 474px !important;
+    }
+
+    .k-notification-info .k-notification-content {
+        color: var(--Brand-700, #1968BD);
+        font-family: "Segoe UI";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        margin-bottom: 2px;
+        
+        line-height: normal;
+    }
+    .k-notification-info .k-svg-i-x {
+        color:#1968BD
+    }
+    .k-svg-i-info-circle {
+        color:#1968BD
+
+    }
+}

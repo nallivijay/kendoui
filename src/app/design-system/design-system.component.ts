@@ -6,25 +6,50 @@ import { KENDO_INPUTS } from '@progress/kendo-angular-inputs';
 import { KENDO_LABEL } from '@progress/kendo-angular-label';
 import { KENDO_BUTTONS } from '@progress/kendo-angular-buttons';
 import { KENDO_LAYOUT } from '@progress/kendo-angular-layout';
-import { KENDO_GRID } from '@progress/kendo-angular-grid';
+import { KENDO_GRID, PageChangeEvent,
+  PagerPosition,
+  PagerType, } from '@progress/kendo-angular-grid';
 import { KENDO_DATEINPUTS } from '@progress/kendo-angular-dateinputs';
 import { KENDO_TOOLTIPS } from '@progress/kendo-angular-tooltip';
 import { FormsModule } from '@angular/forms';
 import { Product } from './model';
 import { DropDwnComponent } from "../drop-dwn/drop-dwn.component";
+import { KENDO_PAGER } from "@progress/kendo-angular-pager";
 
 import { ViewChild } from '@angular/core';
+import { products } from './products';
+import {
+  ICON_SETTINGS,
+  IconsService,
+  IconSettingsService,
+} from "@progress/kendo-angular-icons";
+import { MyIconService } from './my-icon.service';
+import { KENDO_DIALOGS } from '@progress/kendo-angular-dialog';
 
 @Component({
   selector: 'app-design-system',
   standalone: true,
-  imports: [KENDO_DROPDOWNS, KENDO_ICONS, KENDO_INPUTS,KENDO_TOOLTIPS, KENDO_LABEL, KENDO_BUTTONS, KENDO_LAYOUT, KENDO_GRID, FormsModule, KENDO_DATEINPUTS, DropDwnComponent],
+  imports: [KENDO_DROPDOWNS, KENDO_ICONS, KENDO_INPUTS,KENDO_TOOLTIPS, KENDO_LABEL, KENDO_BUTTONS, KENDO_LAYOUT, KENDO_GRID,KENDO_PAGER, FormsModule, KENDO_DATEINPUTS, DropDwnComponent,KENDO_DIALOGS],
   templateUrl: './design-system.component.html',
-  styleUrl: './design-system.component.scss'
+  styleUrl: './design-system.component.scss',
+  providers: [
+      IconsService,
+      { provide: ICON_SETTINGS, useValue: { type: "svg" } },
+      { provide: IconSettingsService, useClass: MyIconService },
+    ],
 })
 export class DesignSystemComponent {
 
+  public type: PagerType = "numeric";
 
+  public buttonCount = 5;
+  public info = true;
+  public pageSizes = [2, 5, 10, 20];
+  public previousNext = true;
+  public position: PagerPosition = "bottom";
+  public data: any[] = products;
+  public pageSize = 6;
+  public skip = 0;
   public checkIcon = checkIcon;
   public chevron = chevronDownIcon;
   public dateic = calendarIcon;
@@ -46,6 +71,15 @@ export class DesignSystemComponent {
   public radio2 = {
     layout: "Landscape",
   };
+  public opened = true;
+
+  public close(): void {
+    this.opened = false;
+  }
+
+  public open(): void {
+    this.opened = true;
+  }
   public current = 1;
   public steps = [
     { label: "Step Title", isValid: true},

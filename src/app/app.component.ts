@@ -9,12 +9,13 @@ import { MainComponent } from "./main/main.component";
 
 import { FooterComponent } from "./footer/footer.component";
 import { DesignSystemComponent } from "./design-system/design-system.component";
+import { ToastMessagesComponent } from "./toast-messages/toast-messages.component";
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, KENDO_GRID, HeaderComponent, MainComponent, FooterComponent, DesignSystemComponent],
+  imports: [CommonModule, KENDO_GRID, HeaderComponent, DesignSystemComponent, ToastMessagesComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

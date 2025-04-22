@@ -179,8 +179,11 @@ format="MM/dd/yyyy"
   <div class="sec-holder">
     <div class="sec-heading">Table</div>
     <kendo-grid [data]="gridData3" [columnMenu]="{ filter: true }" [sortable]="true" [resizable]="true"
-      [reorderable]="true" [selectable]="{ mode: 'single' }">
+      [reorderable]="true" [selectable]="{ mode: 'single' }"
+      >
+      
       <kendo-grid-checkbox-column [width]="45" [headerClass]="{ 'text-center': true }" [class]="{ 'text-center': true }"
+
         [resizable]="false" [columnMenu]="false" [showSelectAll]="false"></kendo-grid-checkbox-column>
   
       <kendo-grid-column field="contract" title="Contract"> </kendo-grid-column>
@@ -228,4 +231,53 @@ format="MM/dd/yyyy"
 
 
   
+  <!-- for pagination -->
+  <div class="sec-holder">
+    <div class="sec-heading">Pagination</div>
+    <kendo-grid
+[kendoGridBinding]="data"
+[pageSize]="pageSize"
+[skip]="skip"
+[pageable]="true"
+>
+<kendo-grid-column field="ProductID" title="ID"> </kendo-grid-column>
+<kendo-grid-column field="ProductName" title="Name"> </kendo-grid-column>
+<kendo-grid-column field="UnitPrice" title="Price"> </kendo-grid-column>
+
+<ng-template kendoPagerTemplate>
+  <kendo-pager-spacer></kendo-pager-spacer>
+  <kendo-pager-info></kendo-pager-info>
+  <kendo-pager-prev-buttons ></kendo-pager-prev-buttons>
+  <kendo-pager-numeric-buttons
+    [buttonCount]="3"
+  ></kendo-pager-numeric-buttons>
+ <kendo-pager-next-buttons></kendo-pager-next-buttons>
+ <kendo-pager-page-sizes  [pageSizes]="pageSizes" ><ng-template>
+  .dd
+ </ng-template></kendo-pager-page-sizes>
+ 
   
+</ng-template>
+</kendo-grid>
+  </div>
+
+  <div class="sec-holder">
+    <div class="sec-heading">Dialog </div>
+    @if (!opened) {
+      <button kendoButton (click)="open()">Open dialog</button>
+      } @if (opened) {
+      <kendo-dialog title="Confirmation" (close)="close()">
+        <p>Are you sure you want mark below as Complete?</p>
+        <div class="tc">
+          <p class="thd">Tasks:</p><p class="tdd">2403145770-001</p><p class="thd">Worksheet ID:</p><p class="tdd">13381372  </p>
+        </div>
+        
+        <kendo-dialog-actions>
+          <div class="space"></div>
+      <button kendoButton class="Secondary-btn">Cancel</button>
+
+          <button kendoButton [themeColor]="'primary'" class="primary-btn" (click)="abc()">Confirm</button>
+        </kendo-dialog-actions>
+      </kendo-dialog>
+      }
+    </div>
