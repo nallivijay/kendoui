@@ -73,7 +73,8 @@ export class DesignSystemComponent {
   };
   public opened = true;
 
-  public close(): void {
+  public close(status: string): void {
+    console.log(`Dialog result: ${status}`);
     this.opened = false;
   }
 

@@ -173,7 +173,6 @@ format="MM/dd/yyyy"
 
     
   </div>
-  </div>
   <!-- code for grid -->
   
   <div class="sec-holder">
@@ -266,7 +265,7 @@ format="MM/dd/yyyy"
     @if (!opened) {
       <button kendoButton (click)="open()">Open dialog</button>
       } @if (opened) {
-      <kendo-dialog title="Confirmation" (close)="close()">
+      <kendo-dialog title="Confirmation" (close)="close('cancel')">
         <p>Are you sure you want mark below as Complete?</p>
         <div class="tc">
           <p class="thd">Tasks:</p><p class="tdd">2403145770-001</p><p class="thd">Worksheet ID:</p><p class="tdd">13381372  </p>
@@ -274,10 +273,12 @@ format="MM/dd/yyyy"
         
         <kendo-dialog-actions>
           <div class="space"></div>
-      <button kendoButton class="Secondary-btn">Cancel</button>
+      <button kendoButton class="Secondary-btn" (click)="close('no')">Cancel</button>
 
-          <button kendoButton [themeColor]="'primary'" class="primary-btn" (click)="abc()">Confirm</button>
+          <button kendoButton [themeColor]="'primary'" class="primary-btn" (click)="close('yes')" >Confirm</button>
         </kendo-dialog-actions>
       </kendo-dialog>
       }
     </div>
+  </div>
+  
