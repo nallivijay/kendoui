@@ -738,7 +738,7 @@ kendo-grid {
 
 ::ng-deep .k-window {
   background-color: #ffffff !important;
-  width: 405px !important;
+  width: 435px !important;
   height: 180px !important;
 }
 
@@ -754,7 +754,7 @@ kendo-grid {
 }
 
 .space {
-  width: 30px;
+  width: 100px;
 }
 
 ::ng-deep .k-window-title {
@@ -772,7 +772,7 @@ margin-bottom: 0px;
 color: var(--Gray-900, #181D27);
 
 /* Text lg/Regular */
-font-family: "SF Pro Display";
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -789,17 +789,18 @@ font-weight: 400;
   font-style: normal;
   font-weight: 400;
   margin-top: 5px;
+  margin-right: 4px;
 
 }
 .tdd {
   color: var(--Gray-900, #181D27);
 
 /* Body/Medium */
-font-family: "SF Pro Display";
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 font-size: 14px;
 font-style: normal;
 font-weight: 500;
-margin-right: 5px;
+margin-right: 20px;
 margin-top: 5px;
 
 }
@@ -813,3 +814,9 @@ background: var(--Gray-800, #252B37);
 
 backdrop-filter: blur(4px);
 }
+
+::ng-deep .k-button-text {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+  
