@@ -7,7 +7,7 @@
       <kendo-svgicon [icon]="chevron" class="dwn-arrow"></kendo-svgicon>
       <!-- <kendo-dropdownlist #dropdownlist [data]="listItems" [fillMode]="'outline'" value="Approved"> </kendo-dropdownlist> -->
       <kendo-multiselect #multiselect [kendoMultiSelectSummaryTag]="2" [data]="listItems1" [(ngModel)]="value"
-        textField="text" [fillMode]="'outline'" valueField="value" [checkboxes]="true" class="drpdwn" [autoClose]="false">
+        textField="text" [fillMode]="'outline'" valueField="value" [checkboxes]="true" class="drpdwn" [autoClose]="false" [placeholder]="'Select team member'">
         <ng-template kendoMultiSelectGroupTagTemplate let-dataItems class="chip-clr">
           +{{ dataItems.length }} more
         </ng-template>
@@ -140,7 +140,7 @@ calendarType="classic"
 format="MM/dd/yyyy"
 ></kendo-datepicker>
 </div>
-</div>
+</div> 
 
   <!-- code for stepper -->
   
@@ -285,4 +285,3 @@ format="MM/dd/yyyy"
       }
     </div>
   </div>
-  

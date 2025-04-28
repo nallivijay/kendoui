@@ -81,6 +81,13 @@
   vertical-align: bottom;
   top: 1px;
 }
+::ng-deep .k-radio {
+  border-color:#A4A7AE !important;
+}
+
+::ng-deep .k-radio:checked:focus, .k-radio.k-checked.k-focus {
+  border-color: #1C77D6 !important;
+}
 
 
 // code for button
@@ -158,8 +165,15 @@
   }
   .k-checkbox:checked {
     background-color:#1C77D6 !important ;
-    color: #1968BD !important;
+    // color: #1968BD !important;
     border: 1px solid #1C77D6 !important;
+  }
+  .k-checkbox {
+    border-color: #A4A7AE;
+  }
+  .k-label {
+    color: #181D27 !important;
+    font-size: 14px !important;
   }
 
   .k-checkbox:checked::before{
@@ -175,13 +189,14 @@
   .k-list-item-text {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px !important;
+    color: #181D27 !important;
     font-weight: 400 !important;
   }
   .k-list-content  .k-checkbox {
     border: 1px solid #D5D7DA !important;
   }
   .k-list-content  .k-checkbox:checked {
-    border: 1px solid #1968BD !important;
+    border: 1px solid #1C77D6 !important;
   }
   .k-chip {
     border-color: #D5D7DA !important;
@@ -198,7 +213,9 @@
 
 }
 
-
+::ng-deep .k-chip-text, .k-chip-label  {
+  color: #181D27 !important;
+}
 .k-chip:nth-child(3) .k-chip-label{
   color: #1C77D6 !important ;
 }
